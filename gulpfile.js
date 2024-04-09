@@ -11,7 +11,7 @@ function sassComp(){
 
 function moveHTML(){
     return src('./src/index.html')
-    .pipe(dest('./build/html'))
+    .pipe(dest('./build'))
 }
 
 function cleanBuild(){
