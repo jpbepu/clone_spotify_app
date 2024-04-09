@@ -1,6 +1,7 @@
 # Clone Spotify
 
- ### Leve redesign de UI inspirada no aplicativo Spotify para desktop. Página feita com o intuito de praticar/demonstrar minhas habilidades técnicas em formatacão de UI's dinâmias e responsivas.
+ ### Leve redesign de UI inspirada no aplicativo Spotify para desktop. Página feita com o intuito de praticar/demonstrar minhas habilidades técnicas em formatacão de UI's dinâmias e responsivas. Como o intuito desse clone é somente a práticado SASS e Gulp, o comportamento dos botões e sliders não foi implementado.
+
 <br>
 
 ## Features
