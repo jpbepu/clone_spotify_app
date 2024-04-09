@@ -6,23 +6,18 @@ const clean = require('gulp-clean');
 function sassComp(){
     return src('./src/style.scss')
     .pipe(sass())
-    .pipe(dest('./build'))
+    .pipe(dest('./build/css'))
 }
 
 function moveHTML(){
     return src('./src/index.html')
-    .pipe(dest('./build'))
-}
-
-function moveImgs(){
-    return src('./src/imgs/*')
-    .pipe(dest('./build/imgs'))
+    .pipe(dest('./build/html'))
 }
 
 function cleanBuild(){
-    return src('./build')
+    return src('./build/**/*.{html, css}')
     .pipe(clean())
 }
 
 
-exports.default = series(cleanBuild, moveHTML, sassComp, moveImgs)
+exports.default = series(cleanBuild, moveHTML, sassComp)
