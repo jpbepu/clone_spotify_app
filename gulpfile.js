@@ -15,9 +15,14 @@ function moveHTML(){
 }
 
 function cleanBuild(){
-    return src('./build/**/*.{html, css}')
+    return src('./build')
     .pipe(clean())
 }
 
+function moveIMG(){
+    return src('./src/imgs/*', {encoding: false})
+    .pipe(dest('./build/imgs'))
+}
 
-exports.default = series(cleanBuild, moveHTML, sassComp)
+
+exports.default = series(cleanBuild, moveHTML, moveIMG, sassComp)
